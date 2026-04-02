@@ -297,6 +297,10 @@ nav a:hover {
   margin: auto 5px 5px 5px;
 }
 
+.accommodations a {
+  display: contents;
+}
+
 .see-more {
   display: block;
   margin-top: 20px;
@@ -403,6 +407,11 @@ nav a:hover {
   font-size: 16px;
   font-weight: 700;
   margin: 0;
+}
+
+.activities-cards a {
+  display: block;
+  flex: 1;
 }
 
 /******** Footer ********/
