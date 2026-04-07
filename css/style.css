@@ -177,6 +177,10 @@ nav a:hover {
   background-color: #0053d0;
 }
 
+.search-icon {
+  display: none;
+}
+
 /****** Filters ***********/
 .filters {
   display: flex;
@@ -531,20 +535,73 @@ footer {
     padding: 20px 20px 0 20px;
   }
 
+  .search-icon {
+    display: block;
+    width: 20px;
+    color: white;
+  }
+
   .search-bar button span {
     display: none;
   }
 
+  .search-bar img {
+    display: block;
+    width: 20px;
+    padding-left: 10px;
+  }
+
   .filters {
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filters span {
+    width: 100%;
+    text-align: start;
+  }
+
+  .filters button {
+    width: 45%;
+    justify-content: center;
   }
 
   .main-container {
     padding: 0 20px;
   }
 
+  .accommodations-and-popular {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .popular .card {
+    width: 100%;
+  }
+
+  .popular-cards {
+    flex-direction: column;
+  }
+
+  .popular-cards a {
+    width: 100%;
+  }
+
+  .accommodations-and-popular .accommodations {
+    background-color: transparent;
+    padding: 0px;
+  }
+
   .accommodations .card {
     width: 100%;
+    height: 250px;
+    justify-content: center;
+  }
+
+  .accommodations .card img {
+    height: 70%;
+    width: auto;
   }
   .activities {
     padding: 30px 20px;
