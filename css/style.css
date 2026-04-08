@@ -506,7 +506,7 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   header {
-    padding: 0 20px;
+    padding: 0;
   }
 
   header > div {
@@ -515,24 +515,36 @@ footer {
   }
 
   nav {
+    display: flex;
     width: 100%;
-    justify-content: space-around;
+    gap: 0;
   }
 
   nav a {
-    border-bottom: none;
-    border-top: 3px solid transparent;
-    padding-bottom: 0;
-    padding-top: 10px;
+    flex: 1;
+    text-align: center;
+    border-top: none;
+    border-bottom: 3px solid var(--main-bg-color);
+    padding-bottom: 15px;
+    display: block;
   }
 
   nav a:hover {
-    border-bottom: none;
-    border-top: 3px solid var(--main-color);
+    border-top: none;
+    border-bottom: 3px solid var(--main-color);
   }
 
   .search {
     padding: 20px 20px 0 20px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    flex: 1;
   }
 
   .search-icon {
@@ -543,12 +555,18 @@ footer {
 
   .search-bar button span {
     display: none;
+    height: fit-content;
   }
 
   .search-bar img {
     display: block;
     width: 20px;
     padding-left: 10px;
+  }
+
+  .search-bar button {
+    padding: 17px 17px;
+    border-radius: 15px;
   }
 
   .filters {
@@ -568,12 +586,22 @@ footer {
   }
 
   .main-container {
-    padding: 0 20px;
+    padding: 0;
   }
 
   .accommodations-and-popular {
     flex-direction: column-reverse;
     gap: 10px;
+  }
+
+  .popular {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .accommodations-and-popular section {
+    border-radius: 0;
   }
 
   .popular .card {
@@ -590,7 +618,7 @@ footer {
 
   .accommodations-and-popular .accommodations {
     background-color: transparent;
-    padding: 0px;
+    padding: 0 25px;
   }
 
   .accommodations .card {
@@ -604,7 +632,7 @@ footer {
     width: auto;
   }
   .activities {
-    padding: 30px 20px;
+    padding: 30px 45px;
   }
 
   .activities-cards {
