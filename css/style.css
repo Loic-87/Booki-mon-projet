@@ -470,6 +470,12 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .filters span {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
   .accommodations-and-popular {
     flex-direction: column;
     gap: 0;
@@ -500,6 +506,10 @@ footer {
 
   .popular-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  .activity-card img {
+    height: 250px;
   }
 }
 
